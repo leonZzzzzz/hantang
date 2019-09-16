@@ -1,0 +1,120 @@
+@import '../../../styles/index.scss';
+
+.introduce {
+  background: $page-background-color;
+  .cover-wrap {
+    width: 100%;
+    @include img()
+  }
+  .video {
+    width: 100%;
+  }
+  .title-wrap {
+    @include bottom-line(30px);
+    background: #fff;
+    .top {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      .left {
+        padding: 20px 30px;
+        .title {
+          font-size: 34px;
+        }
+      }
+      .right {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+        color: $color-grey;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 20px;
+          bottom: 20px;
+          border-left: 1px solid $page-background-color;
+        }
+        .iconfont {
+          margin-bottom: 5px;
+        }
+        .ixihuan1 {
+          color: $red-color;
+        }
+      }
+    }
+    .bottom {
+      color: $color-grey;
+      padding: 0 30px 20px;
+      font-size: 28px;
+    }
+  }
+  .address-wrap {
+    background: #fff;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    .left {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      .iconfont {
+        margin-right: 30px;
+        font-size: 36px;
+      }
+    }
+    .right {
+      color: rgb(84, 150,207);
+      font-size: 28px;
+      flex-shrink: 0;
+      margin-left: 30px;
+      .iconfont {
+        margin-left: 10px;
+        font-size: 24px;
+      }
+    }
+  }
+  .taocan-wrap {
+    background: #fff;
+    .title {
+      padding: 30px;
+      @include bottom-line();
+    }
+  }
+  .travels-evaluate-wrap {
+    background: #fff;
+    .title {
+      padding: 30px;
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .more {
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 28px;
+      color: $color-grey;
+      .iconfont {
+        margin-left: 10px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.bottom-wrap {
+  z-index: 10;
+  @include top-line();
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  background: #fff;
+  display: flex;
+}

@@ -1,0 +1,126 @@
+@import '../../../../styles/index.scss';
+
+.order-wrap {
+  background: #fff;
+  .top {
+    @include bottom-line();
+    padding: 30px;
+    font-size: 30px;
+  }
+  .content-group {
+    display: flex;
+    padding: 30px;
+    &:not(:first-child) {
+      @include top-line(30px);
+    }
+    .cover {
+      flex-shrink: 0;
+      margin-right: 30px;
+      width: 180px;
+      height: 180px;
+      @include img();
+    }
+    .info-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
+      .info {
+        .title {
+          @include ellipsis-line();
+        }
+        .unit {
+          font-size: 26px;
+          color: $color-grey;
+          margin-top: 10px;
+        }
+      }
+      .price {
+        @include price-with-small-symbol(32px, $price-color, 5px, 15px);
+      }
+      .qty {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 24px;
+        color: $color-grey;
+      }
+    }
+  }
+}
+.cancel-wrap {
+  background: #fff;
+  .item {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    @include bottom-line(30px);
+    .label {
+      width: 180px;
+    }
+    .content {
+      flex: 1;
+      .placeholder {
+        color: $color-grey;
+      }
+      .picker {
+        width: 100%;
+        &__inner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .ixiajiantou {
+        color: $color-grey;
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  .remarks-wrap {
+    font-size: 30px;
+    padding: 30px;
+    .label {
+      padding-bottom: 30px;
+    }
+    .textarea {
+      border: 1px solid $divider-line-color;
+      padding: 20px;
+      width: 650px;
+      height: 150px;
+      font-size: 30px;
+    }
+  }
+}
+
+.tip-wrap {
+  background: $page-background-color;
+  padding: 20px 0 100px 0;
+  .title-wrap {
+    padding: 30px 0 10px 0;
+    text-align: center;
+    .iconfont {
+      margin: 0 10px;
+    }
+    .dot {
+      width: 30px;
+      padding: 0 20px;
+    }
+  }
+  .content {
+    padding: 0 60px;
+    line-height: 2;
+    color: rgb(102, 102, 102);
+    border-radius: 10px;
+    border: 1px solid $color-border;
+    font-size: 28px;
+  }
+}
+
+.btn {
+  margin: 0 30px;
+  background: $red-color;
+  color: #fff;
+}

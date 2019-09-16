@@ -1,0 +1,12 @@
+@import '../../../styles/index.scss';
+
+.wrap {
+  background: #fff;
+  .title {
+    padding: 30px;
+    @include bottom-line();
+  }
+  .content {
+    padding: 20px 30px;
+  }
+}

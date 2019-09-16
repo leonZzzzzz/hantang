@@ -1,0 +1,97 @@
+@import '../../../styles/index.scss';
+
+.activity-wrap {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  .cover {
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 280px;
+    height: 220px;
+    @include img();
+  }
+  .title-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    .title {
+      @include ellipsis-line();
+    }
+    .time-wrap {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      color: $color-grey;
+    }
+  }
+}
+
+.sign-wrap {
+  background: #fff;
+  .title {
+    padding: 30px;
+  }
+  .item {
+    display: flex;
+    padding: 30px;
+    font-size: 30px;
+    .label {
+      flex-shrink: 0;
+      width: 200px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .picker {
+      width: 100%;
+      .picker__inner {
+        display: flex;
+          align-items: center;
+          justify-content: space-between;
+        .iconfont {
+          color: $color-grey;
+          padding: 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .radio-item {
+    font-size: 30px;
+    .label {
+      padding: 30px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .at-radio {
+      .at-radio__title {
+        font-size: 30px;
+      }
+    }
+    .at-checkbox {
+      .at-checkbox__title {
+        font-size: 30px;
+      }
+    }
+  }
+  .top-line {
+    @include top-line(230px);
+  }
+  .xin {
+    color: $red-color;
+    width: 25px;
+    display: inline-block;
+    font-size: 40px;
+    height: 20px;
+    line-height: 1;
+  }
+}
+
+.sign-btn {
+  padding: 100px 30px 30px;
+  button {
+    background: $red-color;
+    color: #fff;
+  }
+}

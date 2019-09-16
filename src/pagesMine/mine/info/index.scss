@@ -1,0 +1,57 @@
+@import '../../../styles/index.scss';
+
+.group {
+  background: $page-background-color;
+  .title {
+    padding: 10px 20px;
+    font-size: 28px;
+    color: $color-grey;
+  }
+  .item {
+    background: #fff;
+    padding: 30px 50px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    text-align: right;
+    .label {
+      color: rgb(104, 104, 104);
+      flex-shrink: 0;
+      margin-right: 20px;
+      text-align: left;
+    }
+  }
+  .top-line {
+    @include top-line(30px);
+  }
+}
+
+.logo-wrap {
+  text-align: center;
+  background: $page-background-color;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: $color-grey;
+  .img {
+    margin: 0 auto;
+    width: 160px;
+    line-height: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    lin
+    image {
+      width: 100%;
+    }
+  }
+}
+
+.btn-wrap {
+  padding: 10px 30px 60px 30px;
+  button {
+    background: $red-color;
+    color: #fff;
+  }
+}

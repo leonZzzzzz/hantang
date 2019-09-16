@@ -1,0 +1,63 @@
+@import '../../styles/index.scss';
+
+.search-page {
+  min-height: 100%;
+  background: #fff;
+}
+.fixed-wrap {
+  // @include bottom-line();
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  .at-search-bar {
+    background: #e51c23;
+  }
+}
+
+.history-search {
+  background: #fff;
+  .h-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    .iconfont {
+      font-size: 36px;
+      color: $color-grey;
+    }
+  }
+  .key-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    .key {
+      background: $page-background-color;
+      margin: 0 30px 30px 0;
+      padding: 10px 30px;
+      border-radius: 6px;
+      font-size: 28px;
+    }
+  }
+}
+
+.search-content-wrap {
+  @include top-line();
+  .whole-wrap {
+    .w-item {
+      .w-title {
+        padding: 30px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 15px;
+          top: 30px;
+          bottom: 30px;
+          width: 10px;
+          background: #e51c23;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../styles/index.scss';
+
+.news-item {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .iconfont {
+      margin-right: 30px;
+      flex-shrink: 0;
+      font-size: 50px;
+      color: $red-color;
+    }
+    .title-wrap {
+      .title {
+        @include ellipsis-line();
+      }
+      .time {
+        font-size: 28px;
+        color: $color-grey;
+        margin-top: 10px;
+      }
+    }
+  }
+  .right {
+    margin-left: 30px;
+    color: $color-grey;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.line {
+  @include top-line();
+}

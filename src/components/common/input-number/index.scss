@@ -1,0 +1,29 @@
+@import '../../../styles/index.scss';
+
+.input-number {
+  display: flex;
+  align-items: center;
+  &__value {
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 40px;
+    text-align: center;
+    border: 1PX solid $divider-line-color;
+  }
+  .iconfont {
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    border: 1PX solid $divider-line-color;
+    &.iadd {
+      border-left: none;
+    }
+    &.isubtract {
+      border-right: none;
+    }
+    &.disabled {
+      color: #999;
+    }
+  }
+}

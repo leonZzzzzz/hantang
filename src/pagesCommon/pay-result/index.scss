@@ -1,0 +1,62 @@
+@import '../../styles/index.scss';
+
+.page {
+  background: $page-background-color;
+}
+.icon-wrap {
+  padding: 30px;
+  text-align: center;
+  color: rgb(96, 205, 79);
+  .iconfont {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  .success-img {
+    width: 120px;
+    @include img();
+    margin: 20px auto;
+  }
+  .text {
+    font-size: 36px;
+    // font-weight: bold;
+  }
+}
+.btn-btn {
+  padding: 30px;
+  display: flex;
+  button {
+    width: 100%;
+  }
+  .check {
+    background: $red-color;
+    color: #fff;
+    margin-right: 30px;
+  }
+  .back {
+    border: 1px solid $red-color;
+    color: $red-color;
+    box-sizing: border-box;
+  }
+}
+.tip-wrap {
+  .title-wrap {
+    padding: 30px 0;
+    text-align: center;
+    .iconfont {
+      margin: 0 10px;
+    }
+    .dot {
+      width: 30px;
+      padding: 0 20px;
+    }
+  }
+  .content {
+    background: #fff;
+    margin: 0 30px;
+    padding: 10px 30px;
+    line-height: 2;
+    color: $color-grey;
+    border-radius: 10px;
+    border: 1px solid $color-border;
+  }
+}

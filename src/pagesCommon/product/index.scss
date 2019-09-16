@@ -1,0 +1,23 @@
+@import '../../styles/index.scss';
+
+.hot-goods-page {
+  background: $page-background-color;
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+    background: #fff;
+    z-index: 1;
+    .search-bar.at-search-bar {
+      &::after {
+        border-bottom-width: 0;
+      }
+      .at-search-bar__input-cnt {
+        border-radius: 10px;
+      }
+    }
+  }
+}

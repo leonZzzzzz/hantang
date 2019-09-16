@@ -1,0 +1,122 @@
+@import '../../styles/index.scss';
+
+.fixed-topa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  .tab-wrap {
+    background: #fff;
+    display: flex;
+    .item {
+      flex: 1;
+      text-align: center;
+      color: $color-grey;
+      // padding: 30px 0;
+      font-size: 30px;
+      height: 100px;
+      line-height: 100px;
+    }
+    .active {
+      color: #000;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 6px;
+        border-radius: 6px;
+        background: $price-color;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #fff;
+  z-index: 1;
+  .search-bar.at-search-bar {
+    &::after {
+      border-bottom-width: 0;
+    }
+    .at-search-bar__input-cnt {
+      border-radius: 10px;
+    }
+  }
+}
+.tabs-pane-wrap {
+  .tabs-pane {
+    .img-list {
+      display: flex;
+      .group {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .cell {
+          width: 360px;
+        }
+      }
+    }
+  }
+}
+// .tabs-pane-wrap {
+//   .tabs-pane {
+//     .goods-wrap {
+//       background: $page-background-color;
+//     }
+//   }
+// }
+.send-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  border-radius: 50%;
+  background: #fff;
+  background: $red-color;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(92, 92, 92, 0.548);
+  .ijiahao {
+    font-size: 40px;
+  }
+}
+
+.send-dialog {
+  .item {
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    height: 100px;
+    width: 580px;
+    margin: 0 auto 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .desc {
+      color: $color-grey;
+      font-size: 28px;
+    }
+  }
+  .close {
+    font-size: 50px;
+    color: #fff;
+    margin: 40px auto 60px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+  }
+}

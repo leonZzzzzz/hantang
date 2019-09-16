@@ -1,0 +1,159 @@
+@import './variables.scss';
+
+
+// absolute 垂直居中
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin absolute-top {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin absolute-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin absolute-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+@mixin absolute-right {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+// flex 垂直居中
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// 单行省略
+@mixin text-ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// 多行省略
+@mixin ellipsis-line($line: 2) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: $line;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+// 重置小程序中img默认的宽高
+@mixin reset-img-wh {
+	width: 100%;
+	height: 100%;
+}
+
+// 重置小程序及H5端默认的按钮样式
+@mixin reset-btn-style {
+	box-sizing: border-box;
+	width: initial;
+	line-height: initial;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: inherit;
+	color: inherit;
+	font-size: inherit;
+	&::after {
+			border: none;
+	}
+}
+
+// 在金额前面带上偏小的价格符号￥
+@mixin price-with-small-symbol($fontSize, $color, $bottom, $paddingLeft, $fontWeight: bold) {
+	position: relative;
+	padding-left: $paddingLeft;
+	font-size: $fontSize;
+	color: $color;
+	font-weight: $fontWeight;
+	&::before {
+		content: '\A5';
+		position: absolute;
+		left: 0;
+		bottom: $bottom;
+		// top: -20px;
+		font-size: $fontSize / 1.5;
+		text-decoration: none;
+	}
+}
+
+
+@mixin top-line($left: 0, $right: 0, $color: #f6f6f6) {
+	position: relative;
+	&::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: $left;
+    right: $right;
+    border-top: 1px solid $color;
+  }
+}
+@mixin bottom-line($left: 0, $right: 0, $color: #f6f6f6) {
+	position: relative;
+	&::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: $left;
+    right: $right;
+    border-bottom: 1px solid $color;
+  }
+}
+
+@mixin number-tag() {
+	font-size: 28px;
+	border: 1px solid $color-primary;
+	width: 100px;
+	text-align: center;
+	// margin-top: 20px;
+	color: $color-primary;
+	background: rgba(255, 156, 0, 0.1);
+	border-radius: 6px;
+}
+
+@mixin img() {
+	overflow: hidden;
+	line-height: 0;
+	background: rgb(241, 241, 241);
+	image {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@mixin reset-wx-btn {
+	box-sizing: border-box;
+	width: initial;
+	line-height: normal;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: inherit;
+	color: inherit;
+	font-size: inherit;
+	&::after {
+			border: none;
+	}
+}

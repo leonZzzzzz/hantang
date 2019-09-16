@@ -1,0 +1,108 @@
+@import '../../../styles/index.scss';
+
+.release {
+  min-height: 100%;
+  background: #fff;
+  .image-upload-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    .item {
+      margin: 0 0 30px 30px;
+      width: 210px;
+      height: 210px;
+      background: rgb(237, 237, 237);
+      @include img();
+      position: relative;
+      .iguanbi {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.507);
+      }
+    }
+    .add {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $color-grey;
+      font-size: 30px;
+      line-height: 1.5;
+      .iconfont {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .video-upload-wrap {
+    padding: 30px;
+    .add-box {
+      background: rgb(237, 237, 237);
+      height: 320px;
+      border-radius: 10px;
+      color: $color-grey;
+      line-height: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .iconfont {
+        font-size: 60px;
+      }
+    }
+    .video-box {
+      height: 320px;
+      border-radius: 10px;
+      overflow: hidden;
+      video {
+        width: 100%;
+        height: 320px;
+      }
+    }
+  }
+
+  .input-wrap {
+    margin-top: 20px;
+    .item {
+      padding: 30px;
+      display: flex;
+      .title {
+        flex-shrink: 0;
+        width: 120px;
+        color: $color-grey;
+      }
+      input {
+        width: 100%;
+      }
+      .content-textarea {
+        background: $page-background-color;
+        font-size: 30px;
+        height: 160px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+    }
+    .line {
+      @include bottom-line(30px);
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 100px;
+    padding: 30px;
+    .send {
+      background: $red-color;
+      color:#fff;
+      border: 0;
+    }
+    .desc {
+      font-size: 30px;
+      text-align: center;
+      color: $color-grey;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../../styles/index.scss';
+
+.address-wrap {
+  background: #fff;
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  .place, .arrow {
+    flex-shrink: 0;
+    color: $color-grey;
+    padding: 0 30px;
+    font-size: 28px;
+  }
+  .place {
+    font-size: 40px;
+  }
+  .info {
+    width: 100%;
+    .address {
+      font-size: 30px;
+      color: rgb(85, 85, 85);
+      margin-top: 10px;
+    }
+  }
+}
+.tiao {
+  height: 14px;
+  overflow: hidden;
+  // background: rgb(111, 196, 255);
+  image {
+    width: 100%;
+  }
+}

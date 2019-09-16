@@ -1,0 +1,61 @@
+@import '../../../styles/index.scss';
+
+.invite-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  .left {
+    display: inline-flex;
+    .info {
+      margin-left: 20px;
+      .title {
+        font-size: 34px;
+      }
+      .time {
+        color: rgb(195, 148, 80);
+        font-size: 24px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .right {
+    text-align: right;
+    .price {
+      color: rgb(195, 148, 80);
+      font-size: 26px;
+    }
+  }
+}
+
+.line {
+  @include top-line(30px, 30px, rgb(251, 229, 198));
+}
+
+.white {
+  background: #fff;
+  .left {
+    .info {
+      .time {
+        color: $color-grey;
+      }
+    }
+  }
+  .right {
+    text-align: right;
+    .price {
+      color: #000;
+    }
+    .state {
+      color: #fff;
+      background: rgb(255, 163, 3);
+      border-radius: 6px;
+      font-size: 22px;
+      display: inline-block;
+      padding: 6px 10px;
+      line-height: 1;
+    }
+  }
+}
+.white-line {
+  @include top-line(30px);
+}

@@ -1,0 +1,18 @@
+@import '../../../../styles/index.scss';
+
+.news-detail {
+  background: #fff;
+  .title-wrap {
+    padding: 30px;
+    .title {
+      font-size: 34px;
+    }
+    .desc {
+      font-size: 28px;
+      color: $color-grey;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+}

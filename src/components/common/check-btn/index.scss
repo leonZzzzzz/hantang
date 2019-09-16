@@ -1,0 +1,18 @@
+@import '../../../styles/index.scss';
+
+.check-btn {
+  display: inline-block;
+  .iconfont {
+    font-size: 36px;
+    margin-right: 20px;
+    &.iweixuanzhong {
+      color: $grey-text;
+    }
+    &.iyishenhe {
+      color: $mall-primary-color;
+    }
+    &.disabled {
+      color: $divider-line-color;
+    }
+  }
+}

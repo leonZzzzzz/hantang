@@ -1,0 +1,78 @@
+@import '../../../styles/index.scss';
+
+.play-packages-item {
+  background: #fff;
+  // margin-top: 20px;
+  display: flex;
+  padding: 30px;
+  
+  .left {
+    width: 160px;
+    height: 160px;
+    // line-height: 0;
+    margin-right: 30px;
+    flex-shrink: 0;
+    // overflow: hidden;
+    @include img();
+    // image {
+    //   width: 100%;
+    // }
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    position: relative;
+    .title {
+      @include ellipsis-line();
+    }
+    .num {
+      margin-top: 10px;
+      font-size: 24px;
+      background: rgb(255, 196, 60);
+      color: #fff;
+      border-radius: 6px;
+      line-height: 1;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .price-wrap {
+        .price {
+          @include price-with-small-symbol(32px, #000, 5px, 15px);
+        }
+      }
+      .sign {
+        background: rgb(209, 13, 35);
+        border-radius: 6px;
+        color: #fff;
+        padding: 0 10px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+
+    .tuan {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      background: rgb(209, 13, 35);
+      border-radius: 50px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      font-size: 34px;
+    }
+  }
+}
+
+.top-line {
+  @include top-line();
+}

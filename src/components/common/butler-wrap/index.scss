@@ -1,0 +1,62 @@
+@import '../../../styles/index.scss';
+
+.butler-wrap {
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  overflow: hidden;
+  &__left {
+    display: flex;
+    align-items: center;
+    // .b-headimage {
+    //   line-height: 0;
+    //   width: 80px;
+    //   height: 80px;
+    //   border-radius: 50%;
+    //   overflow: hidden;
+    //   margin-right: 20px;
+    //   image {
+    //     width: 100%;
+    //   }
+    // }
+    .number {
+      color: rgb(116, 116, 116);
+    }
+    .no-head {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      background: rgb(251, 251, 251);
+      line-height: 80px;
+      text-align: center;
+      .iconfont {
+        font-size: 50px;
+        color: rgb(221, 221, 221);
+      }
+    }
+    .no-text {
+      color: rgb(116, 116, 116);
+    }
+  }
+  &__right {
+    color: #fff;
+    background: linear-gradient(to right, rgb(121, 207, 29) , rgb(44, 178, 0));
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    .iconfont {
+      font-size: 32px;
+      margin-right: 10px;
+    }
+    // .icon-kefu {
+    //   font-size: 50px;
+    // }
+  }
+}

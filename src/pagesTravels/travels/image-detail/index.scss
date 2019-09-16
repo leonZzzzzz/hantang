@@ -1,0 +1,231 @@
+@import '../../../styles/index.scss';
+
+.detail {
+  background: #fff;
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    .info {
+      display: inline-flex;
+      align-items: center;
+      .name {
+        margin-left: 20px;
+        font-size: 30px;
+      }
+    }
+    .time {
+      color: $color-grey;
+      font-size: 28px;
+    }
+  }
+  .cover {
+    @include img();
+  }
+  .content-wrap {
+    padding: 30px;
+  }
+  .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // padding: 0 30px 30px;
+    .item {
+      padding: 0 30px;
+      // width: 150px;
+      color: $color-grey;
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      font-size: 30px;
+      .iconfont {
+        margin-right: 10px;
+      }
+      .ixihuan1 {
+        color: $red-color;
+      }
+    }
+  }
+  .comment-wrap {
+    padding: 30px;
+    .comment-content {
+      background: $page-background-color;
+      border-radius: 10px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        top: -28px;
+        right: 180px;
+        border-width: 16px;
+        border-style: solid;
+        border-color: transparent transparent $page-background-color transparent;
+      }
+      .item {
+        padding: 20px 20px 0;
+        font-size: 30px;
+        @include text-ellipsis();
+        .name {
+          color: $color-grey;
+        }
+      }
+      .more {
+        text-align: center;
+        padding: 20px 0;
+        color: $color-grey;
+        font-size: 30px;
+        .iconfont {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .p-b {
+    padding-bottom: 0;
+  }
+  .switch-wrap {
+    display: flex;
+    align-items: center;
+    .item {
+      padding: 30px;
+      flex: 1;
+      font-size: 30px;
+      color: rgb(82, 148, 207);
+      display: inline-flex;
+      align-items: center;
+      width: 50%;
+      box-sizing: border-box;
+      line-height: 1;
+      .title {
+        @include text-ellipsis();
+        width: 100%;
+      }
+      .arrow {
+        flex-shrink: 0;
+        padding: 0 10px;
+      }
+      .iconfont {
+        font-size: 28px;
+      }
+    }
+  }
+  .recommend-wrap {
+    .title-wrap {
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 30px;
+      @include bottom-line();
+      .more {
+        font-size: 26px;
+        color: $color-grey;
+        .iconfont {
+          margin-left: 10px;
+        }
+      }
+    }
+    .item {
+      padding: 30px;
+      .cover {
+        @include img();
+        height: 300px;
+        width: 100%;
+      }
+      .title {
+        @include text-ellipsis();
+        padding: 10px 0;
+        font-size: 34px;
+      }
+    }
+    .line {
+      @include top-line(30rpx);
+    }
+  }
+}
+
+.comment-wrap {
+  background: #fff;
+  padding-top: 30px;
+  .placeholder {
+    color: rgb(223, 223, 223);
+  }
+  .comment-textarea {
+    width: 690px;
+    height: 150px;
+    color: #000;
+    margin: 0 30px 30px;
+  }
+  .bottom-btn {
+    @include top-line();
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      font-size: 32px;
+    }
+    .cancel {
+      color: $color-grey;
+      width: 140px;
+      text-align: center;
+      line-height: 100px;
+    }
+    .send {
+      color: $red-color;
+      width: 140px;
+      text-align: center;
+      line-height: 100px;
+    }
+  }
+}
+
+.check-comment-dialog {
+  background: #fff;
+  height: 800px;
+  position: relative;
+  .title {
+    text-align: center;
+    // padding: 30px 0;
+    font-weight: bold;
+    @include bottom-line();
+    height: 100px;
+    line-height: 100px;
+  }
+  .close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 40px;
+    color: $color-grey;
+    z-index: 1;
+  }
+  .list {
+    height: 700px;
+  }
+  .send-wrap {
+    height: 100px;
+    @include top-line();
+    display: flex;
+    align-items: center;
+    input {
+      background: rgb(240, 240, 240);
+      margin-left: 30px;
+      width: 100%;
+      font-size: 28px;
+      height: 60px;
+      padding: 0 20px;
+    }
+    .send {
+      width: 180px;
+      color: $red-color;
+      text-align: center;
+      flex-shrink: 0;
+      border: 0;
+      padding: 0;
+    }
+  }
+}

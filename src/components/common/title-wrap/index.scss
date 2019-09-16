@@ -1,0 +1,38 @@
+@import '../../../styles/index.scss';
+
+.title-wrap {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  align-items: center;
+  .left {
+    display: flex;
+    align-items: center;
+    .iconfont {
+      font-size: 36px;
+      color: rgb(253, 79, 29);
+    }
+    .title {
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 0 10px;
+    }
+    .desc {
+      font-size: 28px;
+      color: $color-grey;
+    }
+  }
+  .more {
+    color: $color-grey;
+    font-size: 28px;
+    line-height: 1;
+    .iconfont {
+      font-size: 24px;
+      margin-left: 5px;
+    }
+  }
+}

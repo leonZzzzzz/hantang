@@ -1,0 +1,13 @@
+@import '../../styles/index.scss';
+
+.tab-wrap {
+  @include bottom-line();
+  .search-bar.at-search-bar {
+    &::after {
+      border-bottom-width: 0;
+    }
+    .at-search-bar__input-cnt {
+      border-radius: 10px;
+    }
+  }
+}

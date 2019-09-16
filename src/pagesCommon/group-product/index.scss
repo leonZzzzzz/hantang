@@ -1,0 +1,56 @@
+@import '../../styles/index.scss';
+
+.search-wrap {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  @include bottom-line();
+  position: fixed;
+  .search-bar.at-search-bar {
+    &::after {
+      border-bottom-width: 0;
+    }
+    .at-search-bar__input-cnt {
+      border-radius: 10px;
+    }
+  }
+  .type-wrap {
+    display: flex;
+    .item {
+      padding: 20px 0;
+      flex: 1;
+      text-align: center;
+      font-size: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-grey;
+      &:active {
+        background: rgb(238, 238, 238);
+      }
+      .icon-wrap {
+        margin-left: 4px;
+        color: rgb(221, 221, 221);
+        .iconfont {
+          font-size: 10px;
+          margin-left: 10px;
+          &:first-child {
+            margin-bottom: 4px;
+          }
+        }
+        .black {
+          color: #000;
+        }
+      }
+    }
+    .active {
+      color: #000;
+    }
+  }
+}
+
+.list {
+  background: $page-background-color;
+}

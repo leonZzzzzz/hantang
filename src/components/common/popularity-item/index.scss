@@ -1,0 +1,31 @@
+@import '../../../styles/index.scss';
+
+.popularity-item {
+  background: #fff;
+  padding: 0 0 30px 30px;
+  position: relative;
+  width: 210px;
+  .img {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+    width: 210px;
+    height: 210px;
+    @include img();
+  }
+  .title {
+    @include ellipsis-line();
+    height: 90px;
+    line-height: 45px;
+  }
+  .price {
+    margin-top: 10px;
+    // font-weight: bold;
+    // color: $price-color;
+    @include price-with-small-symbol(32px, $price-color, 5px, 15px);
+  }
+}
+
+.left {
+  padding-left: 30px;
+  // @include top-line();
+}

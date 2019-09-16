@@ -1,0 +1,82 @@
+@import '../../../styles/index.scss';
+
+.prize-order-item {
+  background: #fff;
+  margin-top: 20px;
+  .info-wrap {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    @include bottom-line(30px);
+    .cover {
+      flex-shrink: 0;
+      margin-right: 30px;
+      width: 100px;
+      height: 100px;
+      @include img();
+    }
+    .title-wrap {
+      .title {
+        font-size: 30px;
+        @include ellipsis-line();
+      }
+      .type {
+        font-size: 26px;
+        color: $color-grey;
+        margin-top: 10px;
+      }
+      .yellow {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .bottom-wrap {
+    padding: 20px 30px 20px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .down-wrap {
+      color: rgb(235, 76, 40);
+      // color: #000;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      .text {
+        margin-left: 10px;
+      }
+    }
+    .prize-text {
+      font-size: 28px;
+      color: $color-grey;
+      @include text-ellipsis();
+    }
+    .btn-wrap {
+      display: flex;
+      margin-left: 20px;
+      flex-shrink: 0;
+      .b-item {
+        width: 170px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 28px;
+        box-sizing: border-box;
+        background: $red-color;
+        color: #fff;
+        border-radius: 4px;
+        padding: 0;
+      }
+      .border {
+        border: 1px solid rgb(94, 94, 94);
+        color: rgb(94, 94, 94);
+        background: transparent;
+      }
+      .grey {
+        background: rgb(231, 231, 231);
+        color: #fff;
+        border: 1px solid rgb(231, 231, 231);
+      }
+    }
+  }
+}

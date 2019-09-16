@@ -1,0 +1,110 @@
+@import '../../../styles/index.scss';
+
+.bind-wrap {
+  width: 600px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  .close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 38px;
+    color: $color-grey;
+  }
+  .title {
+    // font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 40px;
+  }
+  .mobile {
+    background: $page-background-color;
+    border: 1px solid $divider-line-color;
+    margin: 80px 0;
+    button {
+      border: 0;
+    }
+  }
+  .butler {
+    margin: 80px 0;
+    .input-wrap {
+      display: flex;
+      // align-items: center;
+      // height: 90px;
+      input {
+        background: $page-background-color;
+        border: 1px solid $divider-line-color;
+        padding: 0 20px;
+        height: 90px;
+      }
+      button {
+        margin-left: 10px;
+        flex-shrink: 0;
+        line-height: 90px;
+      }
+    }
+    .info {
+      margin-top: 20px;
+      border: 1px solid $divider-line-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      .left {
+        display: inline-flex;
+        align-items: center;
+        .head {
+          width: 70px;
+          height: 70px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-right: 20px;
+          image {
+            width: 100%;
+          }
+        }
+        .name {
+          font-size: 34px;
+        }
+      }
+      .right {
+        flex-shrink: 0;
+        margin-left: 10px;
+        color: $color-primary;
+      }
+    }
+  }
+  .confirm {
+    margin: 0 80px;
+    button {
+      background: $red-color;
+      color: #fff;
+      border: 0;
+      margin-bottom: 40px;
+    }
+    .disabled {
+      background: rgb(221, 221, 221);
+    }
+  }
+
+  .steward-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .text {
+      line-height: 2;
+      padding: 30px 0;
+    }
+    button {
+      background: rgb(230, 191, 122);
+      width: 100%;
+      color: #000;
+      .idianhua1 {
+        font-size: 36px;
+      }
+    }
+  }
+}

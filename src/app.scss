@@ -1,0 +1,17 @@
+
+@import './iconfont/iconfont.scss';
+@import './styles/index.scss';
+
+
+page {
+  background: $page-background-color;
+  height: 100%;
+  font-size: 30px;
+}
+
+.d-line {
+  margin-top: 26px;
+}
+.hidden {
+  display: none;
+}

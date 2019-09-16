@@ -1,0 +1,10 @@
+@import '../../../styles/index.scss';
+
+
+.add-btn {
+  padding: 100px 30px 0 30px;
+  .add {
+    background: $red-color;
+    color: #fff;
+  }
+}

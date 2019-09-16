@@ -1,0 +1,19 @@
+@import '../../../styles/index.scss';
+
+.share-dialog {
+  background: #fff;
+  display: flex;
+  .item {
+    padding: 60px;
+    width: 50%;
+    text-align: center;
+    .iconfont {
+      font-size: 46px;
+      color: $red-color;
+      margin-bottom: 20px;
+    }
+    &:active {
+      background: $page-background-color;
+    }
+  }
+}

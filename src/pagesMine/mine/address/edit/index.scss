@@ -1,0 +1,77 @@
+@import '../../../../styles/index.scss';
+
+.page-address-edit {
+  font-size: 28px;
+  .edit-list {
+    padding-bottom: 100px;
+  }
+  .form-cell {
+    display: flex;
+    box-sizing: border-box;
+    // padding: 30px;
+    background: #fff;
+    &__container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 30px;
+      &.border {
+        // border-bottom: 1PX solid $divider-line-color;
+        @include bottom-line(30px);
+      }
+      &.top-item {
+        align-items: flex-start;
+      }
+    }
+    &.spacing {
+      margin-bottom: 20px;
+    }
+    &__title {
+      min-width: 180px;
+      margin-right: 20px;
+    }
+    &__content {
+      flex: 1;
+      .placeholder {
+        color: $color-grey;
+      }
+      .picker {
+        width: 100%;
+        &__inner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .textarea {
+        font-size: 28px;
+        width: 100%;
+        outline: none;
+        resize: none;
+        -webkit-appearance: none;
+        border-radius: 0;
+        border: 0;
+      }
+    }
+    &__footer {
+      display: flex;
+      padding: 0 10px;
+    }
+    .icon-close {
+      padding: 0 10px;
+      color: $color-grey;
+    }
+    .ixiajiantou {
+      color: $color-grey;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  }
+  .btn-wrapper {
+    padding: 0 30px;
+    button {
+      background: $red-color;
+      color: #fff;
+    }
+  }
+}

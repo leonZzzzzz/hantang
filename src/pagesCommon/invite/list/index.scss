@@ -1,0 +1,29 @@
+@import '../../../styles/index.scss';
+
+.total-wrap {
+  background: rgb(255, 255, 255);
+  // padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include bottom-line(30px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  .item {
+    font-size: 28px;
+    padding: 0 30px;
+    line-height: 1;
+    &:first-child {
+      border-right: 1px solid #000;
+    }
+    .green {
+      color: rgb(24, 195, 61);
+    }
+    .red {
+      color: rgb(234, 19, 0);
+    }
+  }
+}
